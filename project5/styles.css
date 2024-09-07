@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#fixed {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+}
+
+#fixed h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgb(43, 42, 42);
+    /* border: 1px solid rgb(43, 42, 42); */
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    height: 48%;
+    width: 100%;
+    padding: 50px 40px 30px 40px;
+}
+
+#header h1 {
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: -5px;
+    line-height: 90px;
+    color: rgb(43, 42, 42);
+}
+
+#country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#country h3,#country h4 {
+    font-size: 25px;
+    color: rgb(43, 42, 42);
+    font-weight: 500;
+}
+
+#country i {
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+#hero-img {
+    height: 90%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+}
+
+/* #hero-img img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+} */
+
+
+#about {
+    height: 50%;
+    width: 100%;
+    /* background-color: orange; */
+    padding: 30px 40px;
+    display: flex;
+}
+
+#about h2 {
+    width: 60%;
+    /* background-color: red; */
+    font-size: 62px;
+    color: rgb(43, 42, 42);
+    letter-spacing: -3px;
+    line-height: 63px;
+    padding-right: 50px;
+}
+
+#info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 2px solid black;
+    padding-left: 40px;
+}
+
+#info h4 {
+    font-size: 25px;
+    color: rgb(43, 42, 42);
+}
+
+#info i {
+    font-size: 25px;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+#work {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid rgb(43, 42, 42); 
+    padding: 40px 40px;
+}
+
+#work1 {
+    height: 100%;
+    width: 35%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+#work1 h3, #work1 i {
+    font-size: 30px;
+    color: rgb(43, 42, 42);
+}
+
+#work2 {
+    height: 100%;
+    width: 65%;
+    /* background-color: red; */
+    border-left: 1px solid black;
+    padding: 0px 40px;
+}
+
+#work2 h2 {
+    font-size: 30px;
+    color: rgb(43, 42, 42);
+}
+
+#work2 p {
+    font-size: 13px;
+    color: rgb(43, 42, 42);
+    margin-top: 3px;
+    line-height: 18px;
+}
+
+#work2 .work2-part1 {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(43, 42, 42);
+}
+
+#work2 .work2-part2 {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+}
+
+#work2 .inside-work2-left1, #work .inside-work2-left2 {
+    width: 50%;
+    padding-right: 30px;
+    border-right: 1px solid rgb(43, 42, 42);
+}
+
+#work2 .inside-work2-right1, #work .inside-work2-right2 {
+    width: 50%;
+    padding-left: 30px;
+}

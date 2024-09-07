@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%; /* 62.5% = 10px */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+}
+
+/* ############### Header Styling ############### */
+
+.header {
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+} 
+
+/* ############# utility classes ############## */
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 2.5rem;
+}
+
+.md-heading {
+    font-size: 2.2rem;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: #333;
+}
+
+.text-gray {
+    color: #555;
+}
+
+.bg-dark {
+    background: #263238;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary {
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+.btn-primary:hover {
+    background-color: #ddd;
+}
+
+.btn-secondary {
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    background: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #fcf3f2;
+}
+
+
+/* ############## nav bar styling ############# */
+
+.nav-bar {
+    padding: 1rem;
+}
+
+.nav-bar .logo {
+    float: left;
+    margin-top: 1rem;
+    border: 2px solid #fff;
+    padding: 0px 0.5em;
+}
+
+/* .nav-bar .logo::before {
+    content: '';
+    display: block;
+    border: 1px solid #ddd;
+    width: 42%;
+}
+
+.nav-bar .logo::after {
+    content: '';
+    display: block;
+    border: 1px solid #ddd;
+    margin-left: 5.3em;
+    width: 50%;
+} */
+
+.nav-bar .nav-items {
+    float: right;
+    margin-top: 1rem;
+}
+
+.nav-bar .nav-item {
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.nav-bar a:link,
+.nav-bar a:visited {
+    color: #fff;
+}
+
+.nav-bar a {
+    padding-bottom: 0.3rem;
+}
+
+.nav-bar a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.nav-bar::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############## header content styling ############### */
+
+.header-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p {
+    text-transform: uppercase;
+}
+
+/* ############# Showcase section styling ############### */
+
+.showcase {
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row {
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box, .row2 .text-box {
+    float: left;
+    width: 50%;
+}
+
+.row1 .text-box, .row2 .img-box {
+    float: right;
+    width: 50%;
+}
+
+.row .img-box {
+    height: 100%;
+}
+
+.row .text-box {
+    padding: 3rem;
+}
+
+.row .img-box img {
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ############# Feature section styling ############# */
+
+.features {
+    padding: 10rem 0;
+}
+
+.box-wrapper {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.301);
+}
+
+.box {
+    width: 33.33%;
+    text-align: center;
+    padding: 1.5em;
+    float: left;
+}
+
+.box1, .box3 {
+    background-color: #263232;
+    color: #ddd;
+}
+
+.box2 {
+    background: linear-gradient(rgba(180, 80, 80), rgba(180, 80, 80));
+    color: #fff;
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ############## Footer styling ############## */
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #263238;
+    color: #fff;
+}
+
+.social-media-links i {
+    margin: 2rem;
+}
+
+/* ################ About Page Styling ############### */
+
+.about-section {
+    padding: 5em 0;
+}
+
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 2px solid #e63946;
+    width: 100%;
+}
+
+/* ################# About wrapper styling ############### */
+
+.about-wrapper {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.about-wrapper .right {
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper .left {
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper li::before {
+    content: '\2713';
+    color:#e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.about-wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ################ Count section styling ############### */
+
+.counts {
+    margin-top: 3rem;
+}
+
+.counts .count-Item {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.count-Item span {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #e63946;
+}
+
+.count-Item .count-text {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+.counts::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############## banner Styling ############## */
+
+.banner {
+    background: #e63946;
+    color: #fff;
+    padding: 1.5em 1em;
+    box-shadow: 5px 5px 10px #00000038;
+}
+
+.banner-left {
+    float: left;
+    width: 60%;
+}
+
+.banner-right {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.text-banner {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.btn-banner {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    border: 3px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5rem;
+}
+
+.banner::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ################# Contact Page styling ############### */
+
+.contact-form {
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+
+.form-wrapper .company-address {
+    background: #fff;
+    float: left;
+    width: 49%;
+    height: 760px;
+    padding: 1rem;
+}
+
+.form-wrapper .company-address i {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .company-address h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group {
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img {
+    width: 90%;
+    max-height: 420px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.form-wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ################# Form Styling ################## */
+
+.form-wrapper .form {
+    font-size: 1.6rem;;
+    background: #fff;
+    float: right;
+    width: 49%;
+    height: 760px;
+    padding: 1rem;
+}
+
+.form h1::after {
+    content: '';
+    display: block;
+    border: 2px solid #ee4758;
+    width: 100%;
+}
+
+.form-wrapper .form label {
+    display: block;
+}
+
+.form-wrapper .form input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group {
+    margin-bottom: 1.2rem;
+} 
+
+.form-wrapper .form label::after {
+    content: '*';
+    color:#e63946;
+}
+
+.form-wrapper .form textarea {
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ##################### Media Query ################### */
+
+@media (max-width: 500px) {
+    html {
+        font-size: 50%;
+    }
+
+    .nav-bar .logo {
+        float: none;
+        display: block;
+        font-size: 2.3rem;
+        margin: 2rem auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    .nav-bar .nav-items {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .header-content .main-heading {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .header-content .btn {
+        font-size: 1.65rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row .text-box{
+        padding: 2rem;
+    }
+
+    .box {
+        width: 100%;
+        text-align: center;
+        padding: 1.5em;
+        margin-top: 5rem;
+        float: none;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.301);
+    }
+
+    .box-wrapper {
+        box-shadow: none;
+    }
+
+    .footer {
+        padding: 1rem;
+        text-align: center;
+        background-color: #263238;
+        color: #fff;
+    }
+    
+    .social-media-links i {
+        margin: 1rem;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+
+    .about-wrapper .left, .about-wrapper .right {
+       float: none;
+       width: 100%;
+       margin-bottom: 2rem;
+    }
+
+    .banner-left .text-banner {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .count-Item .count-text {
+        font-weight: 500;
+        font-size: 1.3rem;
+        color: #555;
+    }
+
+    .banner .banner-left, .banner .banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-banner {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+    }
+
+    .form-wrapper .company-address,  .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: autopx;
+        margin-bottom: 5rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .nav-bar .logo {
+        float: none;
+        display: block;
+        font-size: 2.3rem;
+        margin: 2rem auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    .nav-bar .nav-items {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .header-content .main-heading {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .header-content .btn {
+        font-size: 1.65rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row .text-box{
+        padding: 2rem;
+    }
+
+    .box {
+        width: 100%;
+        text-align: center;
+        padding: 1.5em;
+        margin-top: 5rem;
+        float: none;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.301);
+    }
+
+    .box-wrapper {
+        box-shadow: none;
+    }
+
+    .footer {
+        padding: 1rem;
+        text-align: center;
+        background-color: #263238;
+        color: #fff;
+    }
+    
+    .social-media-links i {
+        margin: 1rem;
+    }
+
+    .footer p {
+        font-size: 1.3rem;
+    }
+
+    .about-wrapper .left, .about-wrapper .right {
+       float: none;
+       width: 100%;
+       margin-bottom: 2rem;
+    }
+
+    .banner-left .text-banner {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .count-Item .count-text {
+        font-weight: 500;
+        font-size: 1.3rem;
+        color: #555;
+    }
+
+    .banner .banner-left, .banner .banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-banner {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+    }
+
+    .form-wrapper .company-address,  .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: autopx;
+        margin-bottom: 5rem;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 980px) {
+    html {
+        font-size: 50%;
+    }
+
+    .nav-bar .logo {
+        float: none;
+        display: block;
+        font-size: 2.3rem;
+        margin: 2rem auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    .nav-bar .nav-items {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+
+    .header-content .btn {
+        font-size: 1.8rem;
+    }
+
+    .row {
+        height: 450px;
+    }
+
+    .row .text-box h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .text-box p {
+        font-size: 1.5rem;
+    }
+
+    .box-wrapper .md-heading{
+        font-size: 1.8rem;
+    }
+
+    .box-wrapper p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .banner .banner-left, .banner .banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .form, .form-wrapper .company-address {
+        font-size: 1.6rem;
+        float: none;
+        width: 100%;
+        background: #fff;
+        height: auto;
+        margin-top: 5rem;
+    }
+}
+
+@media(orientation: landscape) and (max-height: 500px) {
+    .header {
+        height: 80vmax;
+    }
+}

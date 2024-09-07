@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>SocialBook</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="./Images/logo.png" class="logo" alt="">
+            </a>
+            <ul>
+                <li><img src="./Images/notification.png" alt=""></li>
+                <li><img src="./Images/inbox.png" alt=""></li>
+                <li><img src="./Images/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="./Images/search.png" alt="">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="./Images/profile-pic.png" alt="">
+            </div>
+        </div>
+
+        <!-- ############### Settings menu ###############  -->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="./Images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Nick</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="./Images/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="./Images/setting.png" class="settings-icon" alt="">
+                    <a href="#">Settings & Privacy <img src="./Images/arrow.png" width="10px" alt=""></a> 
+                </div>
+                <div class="settings-links">
+                    <img src="./Images/help.png" class="settings-icon" alt="">
+                    <a href="#">Help & Support <img src="./Images/arrow.png" width="10px" alt=""></a> 
+                </div>
+                <div class="settings-links">
+                    <img src="./Images/display.png" class="settings-icon" alt="">
+                    <a href="#">Display & Accessibility <img src="./Images/arrow.png" width="10px" alt=""></a> 
+                </div>
+                <div class="settings-links">
+                    <img src="./Images/logout.png" class="settings-icon" alt="">
+                    <a href="#">Lougout <img src="./Images/arrow.png" width="10px" alt=""></a> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ############### Profile Page ################  -->
+
+    <div class="profile-container">
+        <img src="./Images/cover.png" class="cover-img" alt="">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="./Images/profile.png" class="pd-img" alt="">
+                    <div>
+                        <h3>Jack Nick</h3>
+                        <p>120 Friends - 20 mutual</p>
+                        <img src="./Images/member-1.png" alt="">
+                        <img src="./Images/member-2.png" alt="">
+                        <img src="./Images/member-3.png" alt="">
+                        <img src="./Images/member-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="./Images/add-friends.png" alt="">Friends</button>
+                <button type="button"><img src="./Images/message.png" alt="">Message</button>
+                <br>
+                <a href="#"><img src="./Images/more.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolorem? <img src="./Images/feeling.png" alt=""></p>
+                    <hr>
+                    <ul>
+                        <li><img src="./Images/profile-job.png" alt="">Director at 99media Ltd</li>
+                        <li><img src="./Images/profile-study.png" alt="">Studied at Meerut University</li>
+                        <li><img src="./Images/profile-study.png" alt="">Went to KPS Meerut</li>
+                        <li><img src="./Images/profile-location.png" alt="">Lives in Meerut, India</li>
+                        <li><img src="./Images/profile-home.png" alt="">From Meerut, India</li>
+                    </ul>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="#">All Photos</a>
+                    </div>
+                    <div class="photo-box">
+                        <div><img src="./Images/photo1.png" alt=""></div>
+                        <div><img src="./Images/photo2.png" alt=""></div>
+                        <div><img src="./Images/photo3.png" alt=""></div>
+                        <div><img src="./Images/photo4.png" alt=""></div>
+                        <div><img src="./Images/photo5.png" alt=""></div>
+                        <div><img src="./Images/photo6.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="#">All Friends</a>
+                    </div>
+                    <p>120(10 mutual)</p>
+                    <div class="friends-box">
+                        <div><img src="./Images/member-1.png" alt="">
+                            <p>Deepika</p>
+                        </div>
+                        <div>
+                            <img src="./Images/member-2.png" alt="">
+                            <p>Ranbeer</p>
+                        </div>
+                        <div>
+                            <img src="./Images/member-3.png" alt="">
+                            <p>Priyanka</p>
+                        </div>
+                        <div>
+                            <img src="./Images/member-4.png" alt="">
+                            <p>Arjun</p>
+                        </div>
+                        <div>
+                            <img src="./Images/member-5.png" alt="">
+                            <p>Varun</p>
+                        </div>
+                        <div>
+                            <img src="./Images/member-6.png" alt="">
+                            <p>Katrina</p>
+                        </div>
+                        <div>
+                            <img src="./Images/member-7.png" alt="">
+                            <p>Vicky</p>
+                        </div>
+                        <div>
+                            <img src="./Images/member-8.png" alt="">
+                            <p>Karina</p>
+                        </div>
+                        <div>
+                            <img src="./Images/member-9.png" alt="">
+                            <p>Salman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="./Images/profile-pic.png" alt="">
+                        <div>
+                            <p>John Nick</p>
+                            <small>Public <i class="ri-arrow-down-s-fill"></i></small>
+                        </div>
+                    </div>
+    
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, John"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="./Images/live-video.png" alt="">Live Video</a>
+                            <a href="#"><img src="./Images/photo.png" alt="">Photo/Video</a>
+                            <a href="#"><img src="./Images/feeling.png" alt="">Feeling/Activity</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./Images/profile-pic.png" alt="">
+                            <div>
+                                <p>John Nick</p>
+                                <span>june 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="ri-more-2-fill"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nesciunt dolorem rerum voluptatem inventore maxime magnam esse nemo aperiam molestiae.</p>
+                    <img src="./Images/feed-image-1.png" class="post-img" alt="">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div>
+                                <img src="./Images/like-blue.png" alt="">
+                                120
+                            </div>
+                            <div>
+                                <img src="./Images/comments.png" alt="">
+                                45
+                            </div>
+                            <div>
+                                <img src="./Images/share.png" alt="">
+                                20
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./Images/profile-pic.png" alt=""> <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./Images/profile-pic.png" alt="">
+                            <div>
+                                <p>John Nick</p>
+                                <span>Aug 6 2021, 09:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="ri-more-2-fill"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae recusandae maxime quibusdam atque ea incidunt a architecto blanditiis dignissimos amet eaque, odio minus voluptatem non velit fugit quaerat aut nobis iure voluptates aspernatur. Adipisci atque odio quaerat exercitationem qui soluta nam praesentium consequatur aspernatur dolor, dolore dignissimos asperiores iusto..</p>
+                    <img src="./Images/feed-image-2.png" class="post-img" alt="">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div>
+                                <img src="./Images/like-blue.png" alt="">
+                                220
+                            </div>
+                            <div>
+                                <img src="./Images/comments.png" alt="">
+                                50
+                            </div>
+                            <div>
+                                <img src="./Images/share.png" alt="">
+                                27
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./Images/profile-pic.png" alt=""> <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./Images/profile-pic.png" alt="">
+                            <div>
+                                <p>John Nick</p>
+                                <span>june 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="ri-more-2-fill"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nesciunt dolorem rerum voluptatem inventore maxime magnam esse nemo aperiam molestiae.</p>
+                    <img src="./Images/feed-image-3.png" class="post-img" alt="">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div>
+                                <img src="./Images/like-blue.png" alt="">
+                                120
+                            </div>
+                            <div>
+                                <img src="./Images/comments.png" alt="">
+                                45
+                            </div>
+                            <div>
+                                <img src="./Images/share.png" alt="">
+                                20
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./Images/profile-pic.png" alt=""> <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./Images/profile-pic.png" alt="">
+                            <div>
+                                <p>John Nick</p>
+                                <span>june 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="ri-more-2-fill"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nesciunt dolorem rerum voluptatem inventore maxime magnam esse nemo aperiam molestiae.</p>
+                    <img src="./Images/feed-image-4.png" class="post-img" alt="">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div>
+                                <img src="./Images/like-blue.png" alt="">
+                                120
+                            </div>
+                            <div>
+                                <img src="./Images/comments.png" alt="">
+                                45
+                            </div>
+                            <div>
+                                <img src="./Images/share.png" alt="">
+                                20
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./Images/profile-pic.png" alt=""> <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./Images/profile-pic.png" alt="">
+                            <div>
+                                <p>John Nick</p>
+                                <span>june 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="ri-more-2-fill"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nesciunt dolorem rerum voluptatem inventore maxime magnam esse nemo aperiam molestiae.</p>
+                    <img src="./Images/feed-image-5.png" class="post-img" alt="">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div>
+                                <img src="./Images/like-blue.png" alt="">
+                                120
+                            </div>
+                            <div>
+                                <img src="./Images/comments.png" alt="">
+                                45
+                            </div>
+                            <div>
+                                <img src="./Images/share.png" alt="">
+                                20
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./Images/profile-pic.png" alt=""> <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="footer">
+        <p>copyright 2024 - rishi pal</p>
+    </div>
+</body>
+</html>
